@@ -1,0 +1,4 @@
+.env
+/movie-env
+/__pycache__
+/data
