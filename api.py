@@ -9,8 +9,8 @@ class MovieApi:
     def __init__(self,movie_id=None):
         self.movie_id = movie_id
 
-    def get_movie_genre_list(self):
-        url = 'https://api.themoviedb.org/3/movie/top_rated?api_key='+ os.environ.get('MOVIE_API_KEY')
+    def get_top_rated_movies(self,page=1):
+        url = 'https://api.themoviedb.org/3/movie/top_rated?api_key='+ os.environ.get('MOVIE_API_KEY') + '&page=' + page
         response = requests.get(url)
         return response
 
@@ -24,7 +24,7 @@ class MovieApi:
         response = requests.get(url)
         return response
     
-    def get_top_rated_movies(self):
+    def get_movie_genre_list(self):
         url = 'https://api.themoviedb.org/3/genre/movie/list?api_key='+ os.environ.get('MOVIE_API_KEY')
         response = requests.get(url)
         return response
@@ -53,13 +53,18 @@ class MovieApi:
         url = 'https://api.themoviedb.org/3/movie/now_playing?api_key='+ os.environ.get('MOVIE_API_KEY')
         response = requests.get(url)
         return response 
+    def get_languages(self):
+        url = 'https://api.themoviedb.org/3/movie/configuration/languages'+ os.environ.get('MOVIE_API_KEY')
+        response = requests.get(url)
+        return response
 
 
-def main():
-    movie_session = MovieApi()
-    genre_list = movie_session.get_movie_genre_list()
-    out_movies = movie_session.get_movies_out_now()
+# def main():
+#     movie_session = MovieApi()
+#     genre_list = movie_session.get_movie_genre_list()
+#     out_movies = movie_session.get_movies_out_now()
+#     # print(out_movies.json())
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
