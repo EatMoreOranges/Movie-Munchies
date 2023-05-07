@@ -9,8 +9,8 @@ _____
 - **Top Movies Dashboard** via [Tableau Public](https://public.tableau.com/app/profile/eatmoreoranges) (https://public.tableau.com/app/profile/eatmoreoranges)
     - Analysis on top rated movies from **[TMDB's API](https://developer.themoviedb.org/docs)**
 
-## Sneak Peaks 👀: (Whats in progress)
-- Data cleaning and EDA (exploritory data analysis) on top rated movies 
+## Sneak Peaks 👀: (What's in progress)
+- Data cleaning and EDA (exploratory  data analysis) on top rated movies 
 
 ## Coming soon 🎬: (My questions than need answering)
 - If a clustering algorithm is given movie data, will it create genre groupings? If not...what did it cook up?👀
