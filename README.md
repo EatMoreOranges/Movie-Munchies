@@ -13,5 +13,5 @@ _____
 - Data cleaning and EDA (exploratory  data analysis) on top rated movies 
 
 ## Coming soon 🎬: (My questions than need answering)
-- If a clustering algorithm is given movie data, will it create genre groupings? If not...what did it cook up?👀
+- If a clustering algorithm is given movie data, will it create genre groupings? If not...what will it cook up?👀
 - Can a model guess the movie genre from only the movie's poster? 🤔(Super excited to find out!)
