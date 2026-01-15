@@ -1,5 +1,5 @@
 import requests
-from requests.exceptions import HTTPError
+# from requests.exceptions import HTTPError
 from dotenv import load_dotenv
 load_dotenv()
 import os 
